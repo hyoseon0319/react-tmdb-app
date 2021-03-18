@@ -22,7 +22,7 @@ router.get("/auth", auth, (req, res) => {
 });
 
 router.post("/register", (req, res) => {
-
+    console.log("register")
     const user = new User(req.body);
 
     user.save((err, doc) => {
